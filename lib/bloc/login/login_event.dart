@@ -5,5 +5,11 @@ abstract class LoginEvent {
 }
 
 class LoginUsernameChanged extends LoginEvent {
-  
+	LoginUsernameChanged(this.username);	
+  final String username;
 }
+
+class LoginPasswordChanged extends LoginEvent {
+	
+}
+
